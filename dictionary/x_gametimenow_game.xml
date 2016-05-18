@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Game" max_length="40" name="x_gametimenow_game" type="collection">
+        <element label="Game Date" max_length="40" name="game_date" type="glide_date_time"/>
+        <element choice="1" default="sport_court" label="Location" max_length="40" name="location" type="choice">
+            <choice/>
+        </element>
+        <element display="true" label="Player" max_length="32" name="player" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="player"/>
+        </index>
+    </element>
+</database>
